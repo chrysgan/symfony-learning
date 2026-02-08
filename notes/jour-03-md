@@ -1,0 +1,26 @@
+# Jour 03 Routing
+
+## 🎯 Objectif du jour
+- Consolider le routing
+    - routes statiques
+    - routes dynamiques
+    - paramètres
+    - méthodes HTTP
+    - Être capable de prévoir quelle méthode sera appelée
+- Vérifier que le mental model tient sans aide
+
+## 🧠 Ce que j’ai compris
+- la facon la plus claire pour moi est en attributes en php je comprends rien
+- on peut mettre des parametres de validation https://symfony.com/doc/current/routing.html#route-parameters
+- on peut passer des valuers par defaut si il n'esiste pas
+    #[Route('/blog/{page}', name: 'blog_index', defaults: ['page' => 1, 'title' => 'Hello world!'])]
+- 
+## ❓ Ce qui reste flou
+les return ::config notation php
+
+Je comprend pas l'exercice 3
+-
+Si deux routes se ressemblent, comment Symfony choisit ? la première qui correspond dans l'ordre du fichier
+## Réponses CHATGPT 
+#[...] = métadonnées attachées à la méthode
+Ce n’est pas du code exécuté, c’est de la configuration déclarative.

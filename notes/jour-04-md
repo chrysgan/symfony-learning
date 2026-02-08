@@ -1,0 +1,20 @@
+# Jour 4 - Twig
+
+## 🎯 Objectif du jour
+- pourquoi Twig existe
+- ce que Twig fait et ne fait PAS
+- la séparation Controller / Vue
+https://symfony.com/doc/current/templates.html
+
+## 🧠 Ce que j’ai compris
+-   {{ ... }}, used to display the content of a variable or the result of evaluating an expression;
+    {% ... %}, used to run some logic, such as a conditional or a loop;
+    {# ... #}, used to add comments to the template (unlike HTML comments, these comments are not included in the rendered page).
+-   return $this->render('user/notifications.html.twig', ['user_first_name' => $userFirstName]);
+-   formatage {{ comment.publishedAt|date }}
+- la fonction asset de twig renvoie vers le dossier public du projet
+
+## ❓ Ce qui reste flou
+j'ai pas tout lu
+- 
+## Réponses CHATGPT 

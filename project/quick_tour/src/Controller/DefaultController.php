@@ -4,16 +4,25 @@
 // src/Controller/DefaultController.php
 namespace App\Controller;
 
-use Psr\Log\LoggerInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-class DefaultController
+class DefaultController extends AbstractController
 {
-      #[Route('/', name: 'index')]
-    public function index(LoggerInterface $logger): Response
+    #[Route('/',methods:['GET'])]
+    public function index(): Response
     {
-        $logger->info('We are logging! again');
-        return new Response();
+        // get the user information and notifications somehow
+        $userFirstName = '...';
+        $userNotifications = ['...', '...'];
+
+        // the template path is the relative file path from `templates/`
+        return $this->render('default.html.twig', [
+            // this array defines the variables passed to the template,
+            // where the key is the variable name and the value is the variable value
+            // (Twig recommends using snake_case variable names: 'foo_bar' instead of 'fooBar')
+            'maVariable' => 'variabl'
+        ]);
     }
 }
