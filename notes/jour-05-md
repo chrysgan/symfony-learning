@@ -1,0 +1,24 @@
+# Jour 05 – Services & Container
+
+## 🎯 Objectif du jour
+- https://symfony.com/doc/current/service_container.html
+- Comprendre ce qu’est un service
+  - c'est une fonction que l'on appelle depuis un controlleur
+  - ca peut etre beaucoup de choses : mail action specifiques
+  - on peut lui dire quand il est utilisé dev/test/prod
+  - si besoin d'un service dans un autre service
+   - l'appeller dans le constructeur v
+- Comprendre le rôle du container
+
+## 🧠 Ce que j’ai compris
+- un passage avec admin email
+- sur les methodes porposées par Intelephense
+    -[o]  → variables/propriété → objet → -> puis encore ->
+    - 🔑  → méthode   → action → ()
+    - 🟣  → classe    → type
+    - 🟦  → interface → contrat
+    - ≡   → constante → Class::CONST
+
+## ❓ Ce qui reste flou
+- ta notion de container n'est pas tres abordé
+- j'ai pas tout lu
