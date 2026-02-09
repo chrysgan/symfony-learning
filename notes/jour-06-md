@@ -1,0 +1,21 @@
+# Jour 6 — Autowiring & Autoconfiguration (démystifiés)
+
+## 🎯 Objectif du jour
+https://symfony.com/doc/current/service_container/autowiring.html
+- comment Symfony devine quoi injecter
+- ce qu’est vraiment l’autowiring
+- ce qu’est l’autoconfiguration
+
+## 🧠 Ce que j’ai compris
+- le nom de class doit etre unique et c'est qui permet de la charger en automatique
+
+
+## ❓ Ce qui reste flou
+- j'ai pas trouvé beaucoup de chose differente dans la page 
+- mais je pense que j'ai pas du comprendre les subtilités
+
+## Réponses CHATGPT 
+Pourquoi ça casse parfois
+Autowiring échoue si : la classe n’est pas dans src/
+Symfony ne peut pas deviner quel service choisir
+plusieurs implémentations possibles
