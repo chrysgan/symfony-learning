@@ -1,0 +1,13 @@
+# Jour 09 – Relations Doctrine
+
+https://symfony.com/doc/current/doctrine/associations.html
+
+## 🎯 Objectif du jour
+- Comprendre les relations entre entités
+- Comprendre owning side / inverse side
+
+## 🧠 Ce que j’ai compris
+- Pourquoi Doctrine dit que le ManyToOne est le côté “owning side” ? car c'est lui qui possede la cle etrangere ?
+
+## ❓ Ce qui reste flou
+- Inverse side c'est linvers emais pas bien compris = onetomany
