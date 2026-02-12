@@ -1,0 +1,25 @@
+# Jour 08 – Doctrine en pratique
+
+## 🎯 Objectif du jour
+https://symfony.com/doc/current/doctrine.html#saving-objects-to-the-database
+- Comprendre le rôle de l’EntityManager
+- Comprendre persist / flush en pratique
+
+## 🧠 Ce que j’ai compris
+- la cle ce sont
+    - l'injection entity mananger interface
+    - setter les variables de l'objet à 
+    - bloquer les données de l'objet à sauver en bas :  $entityManager->persist($product);
+    - ecrire les données en base : $entityManager->flush();
+- point tres interressant symfony validator
+    - ValidatorInterface - a retravailler plus tard
+- chargement d'un objet by id
+    - par entitymanager : $entityManager->getRepository(Product::class)->find($id);
+    - par repository (créé à la création de l'entité ) :$product = $productRepository->find($id);
+    - recherc multi : $products = $repository->findBy(['name' => 'Keyboard'],['price' => 'ASC']);
+
+## ❓ Ce qui reste flou
+- Pourquoi Doctrine ne fait-il PAS le INSERT au moment du persist() ?
+j'ai pas trouvé la reponse mais j'ai constaté qu'il ecrit pas en base pe,ndant le persist
+que fait le persist
+- 
