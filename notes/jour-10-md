@@ -1,0 +1,16 @@
+# Jour 10 – Formulaires Symfony
+
+https://symfony.com/doc/current/forms.html
+
+## 🎯 Objectif du jour
+- Comprendre le système de formulaires
+- Comprendre le lien avec les entités
+
+## 🧠 Ce que j’ai compris
+- on genere le formulaire avec createForm
+- on regarde s'il a dejà été posté
+- en fonction de la reponse on affiche le resultat
+
+## ❓ Ce qui reste flou
+- je ne vois pas ou créer le bouton submit (tasktype)
+- nuance netre createform et createformbuilder ?
